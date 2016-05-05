@@ -1,0 +1,81 @@
+.body{
+	padding: 50px;
+	font:14px "lucida Grande", Helvetica,Arial, sans-serif;
+}
+.title h1{
+    border: 7px solid #73AD21;
+	background-color: #99cccc;
+	margin-left: -8px;
+	text-align: center;
+}
+
+.ul{
+	list-style-type: none;
+	padding:0;
+}
+.people ul{
+	margin-bottom: 100px;
+	margin-left: 80px;
+	width: 300px;
+	height: 50px;
+	line-height:50px;
+	text-align: center;
+	font-size:12px;
+}
+.contact {
+	width: 300px;
+	height: 50px;
+	margin-top: 40px;
+	margin-left: 539px;
+}
+.contact a:hover{
+	box-shadow:1px 2px 2px #5E4B23 inset,1px 2px #e2b85c;
+	background-color:#ccccff;
+}
+.contact a:active{
+	background-color:#ccccff;
+}
+.contact h4{
+	font-size: 24px;
+	font-family: Times New Roman serif;
+	text-align: center;
+	margin-top: 13px;
+	}
+#hide{
+	margin-left: 7px;
+	margin-top: -1px;
+	font-size: 17px;
+	background-color: #99cc66;
+	}
+#show{
+	margin-left: 19px;
+	top: -65px;
+	font-size: 17px;
+	/* height: 26px; */
+	/* width: 138px; */
+	background-color: #99cc66;
+}
+.list{
+	margin-left: 542px;
+	width: 17%;
+	height: 60px;
+	margin-top: -47px;
+}
+.input {
+	margin-left: 542px;
+	width: 17%;
+	height: 60px;
+	margin-top: 150px;
+}
+.input p{
+    font-size: 24px;
+	margin-top:0px;
+	font-family: Times New Roman serif;
+
+}
+#Search-Person{
+    margin-left: 48px;
+	top: -28px;
+	font-size: 20px;
+}
+
