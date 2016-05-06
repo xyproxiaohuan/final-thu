@@ -1,12 +1,18 @@
 .body{
 	padding: 50px;
 	font:14px "lucida Grande", Helvetica,Arial, sans-serif;
+	
+}
+.container{
+	background: url(../images/123.jpg) no-repeat;
+	background-size: cover;
 }
 .title h1{
     border: 7px solid #73AD21;
 	background-color: #99cccc;
 	margin-left: -8px;
 	text-align: center;
+	font-size:28px;
 }
 
 .ul{

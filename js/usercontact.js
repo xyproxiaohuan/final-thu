@@ -16,32 +16,33 @@ $("#hide").on('click',function(){
 
   
   $.ajax({
-    type:'GET',
-    url:'http://fake-people.benspoon.com/1fbe60f7/people',
-    success: function(people) {
-      $.each(people,function(i,people) {
-        $people.append('<li>name:'+ people.name +',Age:'+ people.Age +'</li>');
-      });
-    },
-     error: function() {
-      alert('error loading people.');
-    }
+   url: "https://fake-people.benspoon.com/b4ce90e8/people",
+  success: function(res) {
+        $('.name').on("click", function(){
+           $('#people').empty();
+        res.forEach(function(person){
+      $('#people').append("<li>" + person.name + "</li>" ).toggle();
+    });
+
+        });
+  }     
   });
-   $('#Search-Person').on('click', function() {
-    var people = {
-       name: $name.val(),
-       Age: $Age.val(),
-    };
+  (function(){
+        $('#Find-person').on('click', function() {
+             var person = {};
+            person.name = $('#name').val();
+    
     $.ajax({
       type:'POST',
-      url:'http://fake-people.benspoon.com/1fbe60f7/people',
-      data:{Name:'Rice Sosa', Age:26},
-      success: function(newpeople) {
-        $people.append('<li>name:'+ newpeople.name +', Age:'+newpeople.Age +'</li>');
-        
-      },
+      url:'http://fake-people.benspoon.com/b4ce90e8/people',
+      data:person,
+      success: function(res) {
+        console.log(res)     
+         },
       error: function(){
         alert('error saving contact');
       }
     });
     });
+    })();
+
